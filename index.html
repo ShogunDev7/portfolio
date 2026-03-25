@@ -3,48 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WAM Clone | ShogunDev</title>
+    <title>WAM Replica | ShogunDev</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <nav id="navbar">
+    <nav class="navbar">
         <div class="logo">WAM</div>
-        <div class="nav-right">
-            <a href="#" class="contact-btn">CONTACT US <span>→</span></a>
+        <div class="nav-links">
+            <a href="#">WORK</a>
+            <a href="#">SOLUTIONS</a>
+            <a href="#">MORE —</a>
         </div>
+        <a href="#" class="contact-btn">CONTACT US <span>→</span></a>
     </nav>
 
-    <div id="scroll-content">
-        
-        <section class="section hero" data-color="dark">
-            <div class="hero-inner">
-                <p class="reveal">We are decoding meanings</p>
-                <h1 class="reveal">WAM</h1>
-            </div>
-        </section>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
 
-        <section class="section" data-color="light">
-            <div class="container">
-                <span class="label">SELECTED WORK</span>
-                <h2>CREATIVE STRATEGY <br> & DIGITAL DESIGN</h2>
-                <div class="project-grid">
-                    <div class="project-card"></div>
-                    <div class="project-card"></div>
+            <section class="section hero dark">
+                <div class="container">
+                    <p class="line"><span>We are decoding meanings</span></p>
+                    <h1 class="big-title">WAM</h1>
                 </div>
-            </div>
-        </section>
+                <div class="hero-image-container">
+                    <img src="votre-objet-3d.png" class="parallax-img" alt="Object">
+                </div>
+            </section>
 
-        <section class="section" data-color="dark">
-            <div class="container">
-                <h2>INNOVATION & <br> SOLUTIONS</h2>
-                <p>Building the future of digital experiences.</p>
-            </div>
-        </section>
+            <section class="section light">
+                <div class="container">
+                    <span class="label">SELECTED WORK</span>
+                    <h2 class="reveal-text">CREATIVE STRATEGY <br> & DIGITAL DESIGN</h2>
+                    
+                    <div class="projects-grid">
+                        <div class="project-item">
+                            <div class="img-wrapper">
+                                <img src="p1.jpg" class="parallax-img">
+                            </div>
+                            <h3>NOM DU PROJET</h3>
+                        </div>
+                        <div class="project-item">
+                            <div class="img-wrapper">
+                                <img src="p2.jpg" class="parallax-img">
+                            </div>
+                            <h3>NOM DU PROJET</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+        </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
     <script src="script.js"></script>
 </body>
