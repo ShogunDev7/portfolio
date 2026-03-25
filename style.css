@@ -15,7 +15,6 @@ body {
     color: #fff;
     /* IMPORTANT : Pas d'overflow hidden ici sinon le scroll est bloqué */
     overflow-y: auto; 
-    overflow-x: hidden;
 }
 
 /* --- NAVIGATION --- */
