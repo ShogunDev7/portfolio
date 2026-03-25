@@ -3,57 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WAM Replica | ShogunDev</title>
+    <title>WAM Replica | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <nav class="navbar">
         <div class="logo">WAM</div>
         <div class="nav-links">
-            <a href="#">WORK</a>
-            <a href="#">SOLUTIONS</a>
-            <a href="#">MORE —</a>
+            <a href="#work">WORK</a>
+            <a href="#solutions">SOLUTIONS</a>
+            <a href="#about">ABOUT</a>
         </div>
         <a href="#" class="contact-btn">CONTACT US <span>→</span></a>
     </nav>
 
-    <div id="smooth-wrapper">
-        <div id="smooth-content">
-
-            <section class="section hero dark">
-                <div class="container">
-                    <p class="line"><span>We are decoding meanings</span></p>
-                    <h1 class="big-title">WAM</h1>
+    <div id="scroll-wrapper">
+        <section class="panel dark hero">
+            <div class="container">
+                <div class="reveal-box">
+                    <p class="tagline"><span>We are decoding meanings</span></p>
                 </div>
-                <div class="hero-image-container">
-                    <img src="votre-objet-3d.png" class="parallax-img" alt="Object">
-                </div>
-            </section>
+                <h1 class="giant-title">WAM</h1>
+            </div>
+            <div class="hero-media">
+                <div class="parallax-element"></div>
+            </div>
+        </section>
 
-            <section class="section light">
-                <div class="container">
-                    <span class="label">SELECTED WORK</span>
-                    <h2 class="reveal-text">CREATIVE STRATEGY <br> & DIGITAL DESIGN</h2>
-                    
-                    <div class="projects-grid">
-                        <div class="project-item">
-                            <div class="img-wrapper">
-                                <img src="p1.jpg" class="parallax-img">
-                            </div>
-                            <h3>NOM DU PROJET</h3>
+        <section class="panel light" id="work">
+            <div class="container">
+                <span class="label">SELECTED WORK</span>
+                <h2 class="section-title">CREATIVE STRATEGY <br>& DIGITAL DESIGN</h2>
+                
+                <div class="grid">
+                    <div class="item">
+                        <div class="img-reveal">
+                            <div class="parallax-img" style="background-image: url('https://via.placeholder.com/800x1000');"></div>
                         </div>
-                        <div class="project-item">
-                            <div class="img-wrapper">
-                                <img src="p2.jpg" class="parallax-img">
-                            </div>
-                            <h3>NOM DU PROJET</h3>
+                        <h3>PROJECT NAME</h3>
+                        <p>Visual Identity</p>
+                    </div>
+                    <div class="item">
+                        <div class="img-reveal">
+                            <div class="parallax-img" style="background-image: url('https://via.placeholder.com/800x1000');"></div>
                         </div>
+                        <h3>PROJECT NAME</h3>
+                        <p>Web Design</p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-        </div>
+        <section class="panel dark" id="solutions">
+            <div class="container">
+                <span class="label">OUR EXPERTISE</span>
+                <h2 class="section-title">WE SOLVE <br>COMPLEX PROBLEMS</h2>
+                <div class="big-placeholder">
+                    </div>
+            </div>
+        </section>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
