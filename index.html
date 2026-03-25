@@ -3,52 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | ShogunDev</title>
+    <title>WAM Clone | ShogunDev</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <nav>
-        <div class="logo-mini">ShogunDev</div>
-        <div class="nav-links">
-            <a href="#">WORK</a>
-            <a href="#">PROJECTS</a>
-            <a href="#">PRICES</a>
+    <nav id="navbar">
+        <div class="logo">WAM</div>
+        <div class="nav-right">
+            <a href="#" class="contact-btn">CONTACT US <span>→</span></a>
         </div>
-        <a href="#" class="btn-contact">CONTACT ME <span>→</span></a>
     </nav>
 
-    <header class="hero">
-        <div class="hero-content">
-            <p class="tagline">You imagine, I create</p>
-            <h1 class="main-logo">ShogunDev</h1>
-        </div>
-        <div class="background-image"></div>
-    </header>
+    <div id="scroll-content">
+        
+        <section class="section hero" data-color="dark">
+            <div class="hero-inner">
+                <p class="reveal">We are decoding meanings</p>
+                <h1 class="reveal">WAM</h1>
+            </div>
+        </section>
 
-    <section class="test-frame">
-        <div class="content-box">
-            <span>FRAME DE TEST 1</span>
-            <h2>Projets Récents</h2>
-            <div class="placeholder-media">Image / Vidéo ici</div>
-        </div>
-    </section>
+        <section class="section" data-color="light">
+            <div class="container">
+                <span class="label">SELECTED WORK</span>
+                <h2>CREATIVE STRATEGY <br> & DIGITAL DESIGN</h2>
+                <div class="project-grid">
+                    <div class="project-card"></div>
+                    <div class="project-card"></div>
+                </div>
+            </div>
+        </section>
 
-    <section class="test-frame" style="background-color: #f9f9f9;">
-        <div class="content-box">
-            <span>FRAME DE TEST 2</span>
-            <h2>Expériences</h2>
-            <div class="placeholder-media">Contenu modulable</div>
-        </div>
-    </section>
+        <section class="section" data-color="dark">
+            <div class="container">
+                <h2>INNOVATION & <br> SOLUTIONS</h2>
+                <p>Building the future of digital experiences.</p>
+            </div>
+        </section>
 
-    <section class="test-frame">
-        <div class="content-box">
-            <span>FRAME DE TEST 3</span>
-            <h2>Contact</h2>
-            <button class="modulable-btn">Envoyer un message</button>
-        </div>
-    </section>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
